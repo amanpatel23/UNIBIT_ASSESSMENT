@@ -18,10 +18,12 @@ Second Combination For “8” : [ [ 1,3,2,2], [8,-4,2,2],....,[n,n,n,n] ]
 ### Approach:
 The first task was to find all the pairs of elements in the given array that sum to the given target.
 So for that I used two nested for loops and stored all the pairs that sum to the given target in a 2d list.
-This was of polynomial time complexity task, basically O(N^2), where N = length of the given array.
+This was of polynomial time complexity task, basically **O(N^2)**, where N = length of the given array.
 
 After that I merged all the pairs into a single list(merged_list) and then I sorted the list in ascending order.
 
 And the last step was to double the given target and find all the combinations of elements from that merged_list
-that sum to the doubled target. So for that I used backtracking.
-This was an exponential time complexity task, basically (2^N), where N = length of the merged_list
+that sum to the doubled target. So for that I used *backtracking*.
+This was an exponential time complexity task, basically **(2^N)**, where N = length of the merged_list
+
+So, overall the time complexity of this algorithm is **O(2^N)**.
